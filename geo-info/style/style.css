@@ -1,0 +1,129 @@
+/* --- Google Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* --- container --- */
+#not-available {
+  color: white;
+  font-size: 2rem;
+  line-height: 7rem;
+  width: 90%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #wrapper {
+    width: 70rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #wrapper {
+    width: 90vw;
+    height: 90vh;
+    background: #8ab4f8;
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+  }
+  #wrapper #map {
+    width: 54.4rem;
+    height: 60rem;
+    position: relative;
+  }
+  #wrapper map area {
+    cursor: pointer;
+  }
+  #wrapper #info {
+    width: calc(90vw - 61rem);
+    height: calc(100% - 4rem);
+    background: #151515;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: auto;
+  }
+  #wrapper #info h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  #wrapper #info #country-flag {
+    height: 12rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 2rem;
+  }
+  #wrapper #info #country-geo-location {
+    height: 15rem;
+    width: 15rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background: white;
+  }
+  #wrapper #info #country-geo-location img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #wrapper #info p {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr 1fr 4fr;
+        grid-template-columns: 4fr 1fr 4fr;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 40rem;
+  }
+  #wrapper #info p span:nth-of-type(2) {
+    margin: 0 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
